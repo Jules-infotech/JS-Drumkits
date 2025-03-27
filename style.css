@@ -1,0 +1,68 @@
+html {
+  font-size: 20px;
+  background: url('./background.jpg') bottom center;
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  min-height: 100vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.key {
+  border: .4rem solid rgba(102, 19, 19, 0.774);
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: #f5220641;
+  text-shadow: 0 0 .5rem black;
+}
+
+
+.playing {
+  transform: scale(1.1);
+  transition: transform 0.1s ease-in-out;
+  border: 2px solid #612306;
+  box-shadow: 0 0 10px #f3f2f1;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffffff;
+}
+@media (max-width: 1116px) {
+  .column {
+      width: 20%; /* Two columns on medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .column {
+      width: 33.33%; /* Three columns on larger screens */
+  }
+}
